@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .main {
+            position: relative;
+            overflow: hidden;
+        }
+        .main .header {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+        .main .header img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+        }
+        .footer {
+            position: relative;
+            background-color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+            color: black;
+        }
+        .menu {
+            background-color: rgb(125, 216, 247);
+        }
+        .row {
+            margin: 5px;
+        }
+        label {
+            width: 55px;
+            text-align: left;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset{
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+        .btn-form {
+            width: 250px;
+            height: 50px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+        .btn-cont {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="Página Principal.html">Página Principal</a></li>
+                <li><a href="Horário de Atendimento.html">Horário de Atendimento</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+                <li><a href="Sobre a Clínica.html">Sobre a Clínica</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="Contato.jpg">
+                <!-- Aqui vai o seu header -->
+            </div>
+    
+            <div class="content">
+                <h1 align="center">Entre em contato conosco!</h1>
+
+                <h3>Telefone</h3>
+                <p>4004-7070 ou 3003-3030</p>
+                <h3>Whatsapp</h3>
+                <p>(11) 9 9765-4321</p>
+                <h3>Endereço</h3>
+                <p>Rua Napoleão de Barros, 711 - Vila Clementino - São Paulo/SP</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.0481079659304!2d-46.644544230376454!3d-23.597430669710757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a251d5b5fd9%3A0x966f86a141d670f3!2sR.%20Napole%C3%A3o%20de%20Barros%2C%20711%20-%20Vila%20Clementino%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004024-002!5e0!3m2!1spt-BR!2sbr!4v1715060919967!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <h1 align="center">Formulário de Contato</h1>
+                    <fieldset>
+                        <form onsubmit="" method="get">
+                            <div class="row">
+                                <label>Nome:</label><input type="text" /><br><br>
+                                <label>E-mail:</label><input type="email" /><br><br>
+                                <label>Assunto:</label>
+                                    <select name="subject">
+                                        <option value="">Selecione o assunto</option>
+                                        <option value="duvida">Dúvidas</option>
+                                        <option value="atendimento">Atendimento</option>
+                                        <option value="consulta">Consulta</option>
+                                    </select><br><br>
+                            </div>
+                            <div class="row">
+                                <label>Mensagem:</label>
+                                <textarea name="msg" id="" cols="120" rows="10"></textarea>
+                            </div>
+                            <div class="btn-cont">
+                                <button class="btn-form" type="submit">Enviar</button>
+                                <button class="btn-form" type="reset">Limpar</button>
+                            </div>
+                        </form>
+                    </fieldset>
+
+                    
+                <!-- Aqui vai o seu conteúdo -->
+            </div>
+    
+            <div class="footer">
+                <p>2024 Clínica Médica DIO Saúde. Todos os direitos reservados.</p>
+                <!-- Aqui vai o seu rodapé -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
